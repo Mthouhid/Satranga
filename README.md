@@ -1,1 +1,1 @@
-gunicorn foldername.index:app
+
