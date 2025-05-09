@@ -1,1 +1,1 @@
-satranga
+gunicorn foldername.index:app
