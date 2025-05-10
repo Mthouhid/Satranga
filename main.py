@@ -5,8 +5,8 @@ import sqlite3, os
 app = Flask(__name__)
 app.secret_key = 'satranga123'
 
-@app.route('/')
-def index():
+@app.route('/', methods=['GET', 'HEAD'])
+def home():
     return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
